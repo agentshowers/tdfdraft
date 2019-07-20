@@ -1,0 +1,16 @@
+{
+  "name": "Tour de France draft",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Lists owners in rankings",
+  "content_scripts" : [{
+	"matches" : [ "https://www.letour.fr/*/rankings", "http://www.letour.fr/*/rankings"],
+	"js" : ["draft.js"]
+  }],
+  "icons": { "128": "tdf.png" },
+  "permissions": [
+    "https://www.letour.fr/*/rankings",
+    "http://www.letour.fr/*/rankings",
+    "tabs"
+  ]
+}
